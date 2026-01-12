@@ -1,0 +1,103 @@
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #686868; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    object-fit: cover;
+    border: 5px solid #3498db; 
+    margin-bottom: 20px;
+}
+
+.tagline {
+    font-size: 1.2em;
+    color: #7f8c8d; 
+    font-style: italic;
+
+  }*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Basic body styling */
+body {
+    font-family: 'Roboto', sans-serif; 
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f7f6; 
+    color: #333; 
+}
+
+
+h1, h2 {
+    font-weight: 700;
+    color: #2c3e50; 
+}
+
+h2 {
+    border-bottom: 2px solid #3498db; 
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    display: inline-block; 
+}
+.content {
+    max-width: 900px;
+    margin: 40px auto; 
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    gap: 40px;
+}
+
+.about-section {
+    
+}
+
+.skills-list {
+    list-style: none; 
+    padding: 0;
+}
+
+.skills-list li {
+    background-color: #ffffff; 
+    color: #2c3e50;
+    padding: 8px 15px;
+    margin-bottom: 10px;
+    border-radius: 20px; 
+    font-weight: 400;
+    transition: background-color 0.3s;
+}
+
+.skills-list li:hover {
+    background-color: #3498db; 
+    color: #ffffff;
+}
+.contact-footer {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #2c3e50; 
+    color: #ecf0f1; 
+    margin-top: 40px;
+}
+
+.contact-footer a {
+    color: #3498db; 
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+.contact-footer a:hover {
+    color: #e74c3c; 
+}
+@media (max-width: 768px) {
+    .content {
+        grid-template-columns: 1fr; 
+    }
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gprec</title>
+    <!-- 
+        Tailwind CSS is used for quick, utility-based styling, 
+        but we'll override it with custom styles for the unique, dark, fixed-background look.
+    -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /*
+        1. THE FULL-SCREEN BACKGROUND IMAGE (The Aurora Effect)
+        *** IMPORTANT CHANGE: This now points to a local file path. ***
+        Place your image (e.g., 'background.jpg') in the same folder as this HTML file.
+        */
+        body {
+            /* CHANGE: Using a relative path (./) to reference an image in the current directory.
+               If your file is named something else (e.g., aurora.png), change 'background.jpg' below.
+            */
+            background-image: url('background.jpg');
+            background-size: cover;          /* MANDATORY: Ensures the image covers the whole viewport */
+            background-attachment: fixed;    /* MANDATORY: Keeps the image static when scrolling */
+            background-repeat: no-repeat;
+            background-position: center center;
+            
+            /* Basic font and text setup */
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            color: #FFFFFF; /* All text is white to contrast with the dark content box */
+            line-height: 1.6;
+            min-height: 100vh; /* Ensures the body covers the entire viewport height */
+        }
+
+        /* 2. CENTERED & TRANSPARENT CONTENT WRAPPER
+        This box holds the content, limits its width, centers it, 
+        and provides the semi-transparent black background.
+        */
+        .content-wrapper {
+            max-width: 700px; /* Limits the content width for readability */
+            margin: 0 auto; /* Centers the box horizontally */
+            padding: 40px 20px;
+            
+            /* Semi-transparent black background (70% opacity) */
+            background-color: rgba(0, 0, 0, 0.75); 
+            
+            /* Minimal border for a subtle frame effect */
+            border: 1px solid rgba(255, 255, 255, 0.1); 
+            
+            /* Positioning the box down from the top */
+            margin-top: 80px; 
+            margin-bottom: 80px;
+            
+            /* Remove the default rounded corners of Tailwind for the raw look */
+            border-radius: 0; 
+        }
+
+        /* 3. TYPOGRAPHY & LINK STYLING
+        High contrast and no default underlines.
+        */
+        h1 {
+            font-size: 2.5rem; /* Larger font for the main title (the handle) */
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .profile-photo {
+            width: 80px;
+            height: 80px;
+            border-radius: 0; /* Keep it square for the minimalist aesthetic */
+            border: 2px solid white;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        /* Style for all the embedded links */
+        a {
+            color: #EBEBEB; /* Light gray for links */
+            text-decoration: none; /* Crucial: removes the default underline */
+            transition: color 0.2s ease;
+            white-space: nowrap; /* Prevents links from breaking across lines */
+        }
+        
+        /* Interactive hover effect */
+        a:hover {
+            color: #888888; /* Darker gray on hover for feedback */
+            text-decoration: underline; /* Add underline only on hover */
+        }
+
+        /* Custom style for the link groups to keep them close together */
+        .link-group {
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+            display: block; /* Ensures links stack nicely if the screen is small */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="content-wrapper">
+        <!-- Profile Picture and Handle -->
+        <h1>my DM rules:</h1>
+
+        <!-- Bio/Tagline -->
+        <p class="mt-4 mb-6">these are my DM rules:</p>
+        <p>1.⚠ No Racism.</p>
+        <p>1.1 No saying the n-word</p>
+        <p>1.2 ⚠ No hating/mocking people with a different race.</p>
+        <p>2. ⚠ No bullying, being rude or toxic</p>
+        <p>2.1 ⚠ No sexism (even jokes)</p>
+        <p>3.⚠⚠⚠ No spamming/scamming/IP grabbing/doxxing</p>
+        <p>4. ⚠ No NSFW/Gore (even memes related)</p>
+        <p>5. No brainrot/AI generated content. Go post it on youtube shorts instead.</p>
+        <p>6. No discussing about AI. I do not like AI.</p>
+        <p>7. ⚠ No sexualizing or making sexual jokes about me even outside of my DMS, I am under the age of 18 and if this rule has been broken, you will be reported.</p>
+        <h2>Strike system:</h2>
+        <p>1-2 Strikes - Warning</p>
+        <p>3 Strikes - Block</p>
+        <p>Breaking ANY rule with the ⚠ symbol results in a instant block.</p>
+
+        
+    </div>
+
